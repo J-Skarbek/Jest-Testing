@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build": "webpack"
   },
   "repository": {
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/J-Skarbek/Jest-Testing#readme",
   "devDependencies": {
+    "@babel/preset-env": "^7.20.2",
+    "jest": "^29.3.1",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
   },
