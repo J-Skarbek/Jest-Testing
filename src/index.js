@@ -25,4 +25,4 @@ let encipheredText = encipher('detroit', 15);
 
 console.log(decipher(encipheredText, 0));
 
-console.log(analyzeArray([1, 5, 6, 7, 55, 300, 599]));
+console.log(analyzeArray([4, 5, 6, 7, 55, 300, 599, 1000000, 65, 77, 450]));

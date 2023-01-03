@@ -10,7 +10,7 @@ export function analyzeArray(array) {
   }
 
   const getAverage = array => {
-    let average = arrayTotal / array.length;
+    let average = Math.round( arrayTotal / array.length );
     return average;
   }
 
