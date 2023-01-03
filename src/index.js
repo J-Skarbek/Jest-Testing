@@ -22,4 +22,4 @@ console.log(`dividion: ${calculator.divide(55, 11)}`);
 
 let encipheredText = encipher('boogers', 4);
 
-console.log(decipher(encipheredText));
+console.log(decipher(encipheredText, 4));
