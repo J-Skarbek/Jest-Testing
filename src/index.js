@@ -2,6 +2,7 @@ import _ from 'lodash';
 import { reverseString } from './reverseString';
 import { calculator } from './calculator.js';
 import { encipher, decipher } from './caesarCipher.js';
+import { analyzeArray } from './analyzeArray.js';
 
 function component() {
   const element = document.createElement('div');
@@ -23,3 +24,5 @@ console.log(`dividion: ${calculator.divide(55, 11)}`);
 let encipheredText = encipher('detroit', 15);
 
 console.log(decipher(encipheredText, 0));
+
+console.log(analyzeArray([1, 5, 6, 7, 55, 300, 599]));
