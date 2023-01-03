@@ -20,6 +20,6 @@ console.log(`multiplication: ${calculator.multiply(5, 20)}`);
 console.log(`subtraction: ${calculator.subtract(50, 20)}`);
 console.log(`dividion: ${calculator.divide(55, 11)}`);
 
-let encipheredText = encipher('boogers', 4);
+let encipheredText = encipher('detroit', 15);
 
-console.log(decipher(encipheredText, 4));
+console.log(decipher(encipheredText, 0));
