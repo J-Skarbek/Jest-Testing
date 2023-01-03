@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import { reverseString } from './reverseString';
 import { calculator } from './calculator.js';
+import { encipher, decipher } from './caesarCipher.js';
 
 function component() {
   const element = document.createElement('div');
@@ -18,3 +19,7 @@ console.log(`Addition: ${calculator.add(5, 7)}`);
 console.log(`multiplication: ${calculator.multiply(5, 20)}`);
 console.log(`subtraction: ${calculator.subtract(50, 20)}`);
 console.log(`dividion: ${calculator.divide(55, 11)}`);
+
+let encipheredText = encipher('boogers', 4);
+
+console.log(decipher(encipheredText));
