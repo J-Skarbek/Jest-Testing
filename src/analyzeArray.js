@@ -5,20 +5,24 @@ export function analyzeArray(array) {
     arrayTotal += item;
   });
 
+  const compareNumbers = (a, b) => {
+    return a - b;
+  }
+
   const getAverage = array => {
     let average = arrayTotal / array.length;
     return average;
   }
 
   const getMinValue = array => {
-    let minVal = array.sort();
+    let minVal = array.sort(compareNumbers);
     let getMinVal = minVal.slice(0, 1);
     let minValNumber = Number(getMinVal);
     return minValNumber;
   }
 
   const getMaxValue = array => {
-    let maxVal = array.sort().reverse();
+    let maxVal = array.sort(compareNumbers).reverse();
     let getMaxVal = maxVal.slice(0, 1);
     let maxValNumber = Number(getMaxVal);
     return maxValNumber;
